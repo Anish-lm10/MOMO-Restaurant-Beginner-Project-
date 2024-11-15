@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block title %}
+  Our Services
+{% endblock title %}
+{% block content %}
+{% load static %}
+  <!-- first part start -->
+  <div class="container third">
+    <div class="row">
+        <div class="col-6 mt-5">
+            <div class="mt-5 main-content">
+              <div class="mb-4 design">Our Services</div>
+            <div class="fw-lighter sml-text text-uppercase">Knowing our customers needs</div>
+            <h2 class="mt-2"><span class="text-orange">We're more than just momos.</span></h2>
+            <h3 class="mt-2">We're a full-service dining experience</h3>
+        </div>
+        </div>
+        
+        <div class="col-6 mt-3 ">
+          <div class="box mt-3 d-flex justify-content-center">
+            <img src="{% static 'images/service.png' %}" alt="man-graphic" height="500px" width="500px">
+            </div>
+        </div>
+        </div>
+        </div>
+<!-- first section -->
+
+
+
+  <!-- second part starts -->
+  
+  <div class="image-chef second">
+    <img src="{% static 'images/dinemomo.png'%}" class="image1" alt="chef">
+    <div class="collected-text">
+   <h3 class="fs-1 ">Dine with Us</h3>
+   <p class="fs-5 ">Enjoy our momos in the control of your own home with our delivery services</p><br>
+   <button class="btn btn-warning btn-explore" type="submit"><i class="fa-solid fa-play"></i> Watch the Videos</button>
+  </div>
+  </div>
+ 
+  <!-- second part ends -->
+
+
+
+  <!-- alert section starts -->
+   <div class="container">
+   <div class="alert alert-secondary box2">
+    <div class="text-center">
+      <h2>Got any Queries?</h2>
+      <p>If you have any queries, send us a message. Our Friendly team would love to hear from you.</p>
+      <button class="btn btn-success border rounded-5 p-3"> Get In Touch</button>
+    </div>
+   </div>
+   </div>
+  <!-- alert section ends -->
+{% endblock content %}

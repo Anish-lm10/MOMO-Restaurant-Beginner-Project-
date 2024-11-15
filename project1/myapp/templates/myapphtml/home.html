@@ -1,0 +1,267 @@
+{% extends "base.html" %}
+{% block title %}
+  Home
+{% endblock title %}
+{% block content %}
+  <!-- mainpage starts -->
+   {% load static %}
+  
+   <div class="container">
+    <div class="row ">
+        <div class="col-5 mt-5">
+            <div class="mt-5 main-content">
+            <div class="fw-lighter sml-text">RESTAURANT</div>
+            <h2 class="font1">The <span class="text-white orange"> #One </span> <br>Momo <span class="text-orange">Restaurant</span></h2>
+            <h5 class="fs-5">More that <span class="text-orange">20+ Varieties</span> of momo available for you.</h5> <br>
+            <button class="btn btn-warning btn-explore" type="submit">Explore Food Menu <i class="fa-solid fa-arrow-right"></i> </button>
+        </div>
+        </div>
+        <div class="col-7 mt-5">
+            <img src="{% static 'images/momos.png' %}" alt="plater">
+        </div>
+
+    </div>
+   </div>
+  <!-- mainpage ends -->
+
+  <!-- second Section starts -->
+   <div class="container">
+   <div class="container second">
+    <div class="row">
+        <div class="col-6">
+            <div class="box">
+            <img src="{% static 'images/man.png' %}" alt="man-graphic" height="500px" width="500px">
+            </div>
+        </div>
+        <div class="col-6 d-flex flex-column justify-content-center">
+            <h2 class="fs-1">Why Customers <span class="text-orange">Love Us</span></h2> <br>
+            <p class="fw-lighter texts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi obcaecati beatae aut non assumenda facere, ut in unde ipsum tenetur, quasi veritatis accusantium fugiat repellat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, tempora?Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, ipsum.
+            </p> <br>
+            <button class="btn btn-warning btn-explore" type="submit">Explore Food Menu  <i class="fa-solid fa-arrow-right"></i> </button>
+        </div>
+    </div>
+   </div>
+   </div>
+  <!-- second Section ends -->
+
+  <!-- third section starts -->
+   <div class="container second">
+    <div class="container">
+        <h1 class="text-center">Our <span class="text-orange">Most Popular </span>Recipes</h1>
+        <p class="fw-lighter text-center texts">Browse through a varieties of receipe with fresh ingredients seleceted only from the best places</p>
+    </div>
+    <div class="container d-flex justify-content-center align-items-center gap-4">
+        <button type="button" class="btn btn-outline-dark active items-btn">Buff</button>
+        <button type="button" class="btn btn-outline-dark items-btn">Chicken</button>
+        <button type="button" class="btn btn-outline-dark items-btn">Veg</button>
+    </div>
+    <!-- carsouel starts-->
+    <div class="container d-flex justify-content-center mt-3">
+      <div id="carouselExample" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="d-flex">
+              <div class="img-text">
+                <img src="{% static 'images/jholbuff.png' %}" width="400px" height="400px" class="d-block" alt="Buff Jhol Momo">
+                <p class="text-center fw-bolder fs-4">Buff Jhol Momo <br>Rs <span class="text-orange">200</span></p>
+              </div>
+              <div class="img-text">
+                <img src="{% static 'images/buff.png' %}" width="400px" height="400px" class="d-block" alt="Buff Momo">
+                <p class="text-center fw-bolder fs-4">Buff Momo <br>Rs <span class="text-orange">150</span></p>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="d-flex">
+              <div class="img-text">
+                <img src="{% static 'images/buff.png' %}" width="400px" height="400px" class="d-block" alt="Chicken Momo">
+                <p class="text-center fw-bolder fs-4">Chicken Momo <br>Rs <span class="text-orange">130</span></p>
+              </div>
+              <div class="img-text">
+                <img src="{% static 'images/jholbuff.png' %}" width="400px" height="400px" class="d-block" alt="Chicken Jhol Momo">
+                <p class="text-center fw-bolder fs-4">Chicken Jhol Momo <br>Rs <span class="text-orange">220</span></p>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <div class="d-flex">
+              <div class="img-text">
+                <img src="{% static 'images/buff.png' %}" width="400px" height="400px" class="d-block" alt="Veg Momo">
+                <p class="text-center fw-bolder fs-4">Veg Momo <br>Rs <span class="text-orange">80</span></p>
+              </div>
+              <div class="img-text">
+                <img src="{% static 'images/jholbuff.png' %}" width="400px" height="400px" class="d-block" alt="Veg Jhol Momo">
+                <p class="text-center fw-bolder fs-4">Veg Jhol Momo <br>Rs <span class="text-orange">100</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+      </div>
+      
+    <!-- carsouel ends-->
+  <!-- third section ends -->
+
+  <!-- fourth section starts -->
+   <div class="container second">
+    <h1 class="text-center"><span class="text-orange">We Offer People </span>The Service They Want</h1>
+   </div>
+   <div class="image-chef mt-3">
+    <img src="{% static 'images/chef.png'%}" class="image1" alt="">
+    <div class="collected-text">
+   <h3 class="fs-1 ">Process behind the making</h3>
+   <p class="fs-5 ">See how chefs cooks only the best momos.</p><br>
+   <button class="btn btn-warning btn-explore" type="submit"><i class="fa-solid fa-play"></i> Watch the Videos</button>
+  </div>
+  </div>
+  <!-- fourth section ends -->
+<!-- 
+  <!- fifth section starts -->
+   <div class="container">
+    <div class="row d-flex justify-content-center">
+        <div class="col-3">
+            <div class="text-center card">
+            <img class="mx-auto d-block" src="{% static 'images/party.png'%}" alt="" width="100px" height="100px">
+            <h4>Quality Food</h4>
+            <p>Only the best food with top quality products and ingredients.</p>
+        </div>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-3">
+            <div class="text-center card">
+                <img class="mx-auto d-block" src="{% static 'images/party.png'%}" alt="" width="100px" height="100px">
+                <h4>Private Party</h4>
+                <p>Only the best food with top quality products and ingredients.</p>
+            </div>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-3">
+            <div class="text-center card">
+                <img class="mx-auto d-block" src="{% static 'images/party.png'%}" alt="" width="100px" height="100px">
+                <h4>Categring</h4>
+                <p>Only the best food with top quality products and ingredients.</p>
+            </div>
+        </div>
+    </div>
+   </div>
+   <div class="d-flex justify-content-center btns">
+   <a href="#"><button class="btn btn-warning  mt-5 btn-explore" type="submit"> Explore Our Services <i class="fa-solid fa-arrow-right"></i> </button></a>
+   </div>
+   
+  <!-- fifth section ends -->
+
+  <!-- contact section starts -->
+   <div class="second">
+     <h2 class="text-center">Get <span class="text-orange">In Touch</span></h2>
+     <p class="text-center text-success">Our Friendly team would love to hear from you</p>
+   </div>
+
+   <div class="container w-75 shad">
+    <div class="row">
+        <div class="col-4 left-side">
+            <p class="fw-bolder"><i class="fa-solid fa-map-location-dot"></i> Our Address</p>
+            <p>New Baneshwor, Kathmandu, Bagmati ,Nepal</p><br>
+            <p class="fw-bolder"><i class="fa-solid fa-phone"></i> Our Contact</p>
+            <div class="side1 d-flex gap-5">
+                <div class="mbl">
+                <p>Mobile</p>
+                9805678987, <br>
+                9805678987
+                </div>
+                <div class="land">
+                    <p>Landline</p>
+                    <p>01-3245343</p>
+                </div>
+            </div><br>
+            <p class="fw-bolder"><i class="fa-solid fa-clock"></i> Our Service Time</p>
+            <div class="side2 d-flex gap-5">
+                <div class="mbl">
+                <p>MON-FRI</p>
+                <p>10am - 8pm</p>
+                </div>
+                <div class="land">
+                    <p>SAT-SUN</p>
+                    <p>Closed</p>
+                </div>
+            </div>
+            <br><br><br>
+            <p>Get in touch in social networks</p>
+            <div class="d-flex gap-4 icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-tiktok"></i>
+            </div>
+        </div>
+        <div class="col-8 mt-4">
+            <form method="POST" action="{% url 'contact' %}">
+              {% csrf_token %}
+              <div class="name d-flex gap-5">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">First Name</label>
+                  <input type="text" name="fname"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Last Name</label>
+                  <input type="text" name="lname"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  
+                </div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email</label>
+                  <input type="email" name="email"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  
+                </div>
+                <div class="mb-3">
+                  <label for="exampleDropdown" class="form-label">What can I do for you?</label>
+                  <select class="form-select" id="exampleDropdown" name="choose">
+                      <option selected disabled>Choose...</option>
+                      <option value="order">Order</option>
+                      <option value="book">Book</option>
+                      <option value="enquiry">Enquiry</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Phone no.</label>
+                  <input type="number" name="phone"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  
+                </div>
+                <div class="form-floating mb-3">
+                  <textarea class="form-control" placeholder="Leave a comment here" name="texts" id="floatingTextarea2" style="height: 100px"></textarea>
+                  <label for="floatingTextarea2">Message</label>
+                </div>
+                <button type="submit" class="btn btn-warning btn-explore">Send Message</button>
+                </div>
+                </div>
+                
+                
+              </form>
+         </div>
+        
+         
+  <!-- contact section ends -->
+
+  <!-- map section starts -->
+   <!-- <img src="{% static 'images/map.png' %}" alt="map"> -->
+   <iframe  class="image2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113060.35262336316!2d83.3501331579235!3d27.682190595341897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3996864275d9755f%3A0x2b1e92d89d4bb3ae!2sButwal!5e0!3m2!1sen!2snp!4v1726460974660!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <!-- map section ends -->
+
+
+  
+
+{% endblock content %}

@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% block title %}
+  Contact-Us
+{% endblock title %}
+{% block content %}
+{%load static%}
+  <!-- first section starts -->
+  <div class="text-center mt-5">
+    <div class="mb-4 design">Our Contact</div>
+    <div class="fw-lighter sml-text">GET IN TOUCH</div>
+    <h3 class="mt-2"><span class="text-orange">Our Friendly Team </span> would love to hear from you</h3>
+   </div>
+   <div class="container mt-5">
+    <div class="row">
+      <div class="col-4">
+        <div class="card p-4 shad">
+          <p ><i class="fa-solid fa-map-location-dot text-danger"></i> Location</p>
+          <p>New Baneshwor-41201,</p>
+          <p>Kathmandu, Bagmati, Nepal</p>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card p-4 shad">
+          <p><i class="fa-solid fa-phone text-danger"></i>  Phone</p>
+          <p><span class="text-success"> Mobile:</span> (+977) 9876475847</p>
+          <p><span class="text-success"> Tel:</span>   01-3939393</p>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card p-4 mb-5 shad">
+          <p><i class="fa-solid fa-clock text-danger"></i> Service Time</p>
+          <p><span class="text-success"> MON - FRI :</span>  8am - 9pm </p>
+          <p><span class="text-success"> SAT - SUN :</span>  Closed</p>
+        </div>
+      </div>
+    </div>
+   </div>
+  <!-- first section ends -->
+
+  <!-- contact form and map image starts  -->
+   <div class="container-fluid second">
+    <div class="row">
+      <div class="col-2 img-boxs">
+        <iframe class="img-fluid" style="object-fit: cover; height: 100%; width: 100%; filter: brightness(80%);" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113060.35262336316!2d83.3501331579235!3d27.682190595341897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3996864275d9755f%3A0x2b1e92d89d4bb3ae!2sButwal!5e0!3m2!1sen!2snp!4v1726460974660!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      </div>
+      <div class="col-10 w-50">
+          <h3>Contact <span class="text-orange">Us</span></h3>
+          <p class="fw-lighter">If you have any queries, send us a message. Our Friendly team would love to hear from you</p>
+          <form class="mt-4" method="POST" action="{% url 'contact' %}">
+            {% csrf_token %}
+            <div class="name d-flex gap-5">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">First Name</label>
+                <input type="text" name="fname"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Last Name</label>
+                <input type="text" name="lname"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                
+              </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input type="email" name="email"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                
+              </div>
+              <div class="mb-3">
+                <label for="exampleDropdown" class="form-label">What can I do for you?</label>
+                <select class="form-select" id="exampleDropdown" name="choose">
+                    <option selected disabled>Choose...</option>
+                    <option value="order">Order</option>
+                    <option value="book">Book</option>
+                    <option value="enquiry">Enquiry</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Phone no.</label>
+                <input type="number" name="phone"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                
+              </div>
+              <div class="form-floating mb-3">
+                <textarea class="form-control" placeholder="Leave a comment here" name="texts" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Message</label>
+              </div>
+              <button type="submit" class="btn btn-warning btn-explore">Send Message</button>
+        </div>
+    </div>
+   </div>
+  <!-- contact form and map image ends  -->
+{% endblock content %}
